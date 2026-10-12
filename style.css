@@ -1,0 +1,339 @@
+
+/* General */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Sticky Navigation Bar */
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 20px;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #555;
+}
+
+/* General */
+
+section {
+    padding: 40px 20px;
+    scroll-margin-top: 90px;
+}
+
+section h2 {
+    font-size: 30px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Introduction */
+
+#intro {
+    padding: 60px 20px;
+}
+
+.intro-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.intro-name h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.intro-name p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.intro-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.intro-contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.intro-contact a:hover {
+    text-decoration: underline;
+}
+
+.intro-about {
+    margin-top: 40px;
+    max-width: 700px;
+    line-height: 1.6;
+}
+
+/* Projects */
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.project-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.project a {
+    flex-shrink: 0;
+}
+
+.project img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Work Experience */
+
+.experience {
+    padding: 20px 0;
+}
+
+.experience-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.experience-heading h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.experience-heading .employer {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.experience-details {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.experience ul {
+    padding-left: 25px;
+}
+
+.experience li {
+    margin-bottom: 8px;
+}
+
+/* Education */
+
+.education {
+    padding: 20px 0;
+}
+
+.education-info {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.education-info h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.education-info .institution {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.education-details {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+/* Skills */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.skill-category h3 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #666;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tablets and smaller screens */
+@media (max-width: 900px) {
+
+    nav {
+        gap: 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .project img {
+        width: 220px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    section {
+        padding: 30px 15px;
+        scroll-margin-top: 140px;
+    }
+
+    #intro {
+        padding: 40px 15px;
+    }
+
+    .intro-top {
+        flex-direction: column;
+    }
+
+    .intro-name h1 {
+        font-size: 36px;
+    }
+
+    .intro-name p {
+        font-size: 17px;
+    }
+
+    .intro-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .intro-about {
+        margin-top: 25px;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .project a {
+        width: 100%;
+    }
+
+    .project img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .experience-heading h3,
+    .education-info h3 {
+        font-size: 21px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Reduced motion accessability*/
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

@@ -1,24 +1,352 @@
+
 <!doctype html>
 <html lang="en">
 
 <!--
-WRITTEN BY: Your name here
-EMAIL: Your email here
+WRITTEN BY: Lokesh Sharma
+EMAIL: lokeshs1@uci.edu
 -->
 
 <head>
-  <meta charset="utf-8">
-  <meta name="author" content="Your name here">
-  <meta name="description" content="description of your page">
-   <!-- you would link to an external stylesheet here! -->
-   <!-- you would also link to Bootstrap here! -->
-  <title>title here</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Lokesh Sharma">
+    <meta name="description" content="Personal portfolio for Lokesh Sharma">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Lokesh Sharma | Portfolio</title>
 </head>
+
 <body>
-  <p>
-    <a href="http://validator.w3.org/check?uri=referer">
-       W3C validator
-    </a>
-  </p>
+
+    <!-- TOP NAVIGATION BAR -->
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="#projects">PROJECTS</a>
+            <a href="#work-experience">WORK EXPERIENCE</a>
+            <a href="#education">EDUCATION</a>
+            <a href="#skills">SKILLS</a>
+        </nav>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <main>
+
+        <!-- INTRODUCTION -->
+        <section id="intro">
+
+            <div class="intro-top">
+
+                <div class="intro-name">
+                    <h1>Lokesh Sharma</h1>
+                    <p>Computer Science @ UC Irvine</p>
+                </div>
+
+                <div class="intro-contact">
+                    <a href="mailto:lokeshsharma75382@gmail.com">Email</a>
+                    <a href="https://www.linkedin.com/in/lokeshsharma25"
+                       target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/lakeshoree"
+                       target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+
+            </div>
+
+            <div class="intro-about">
+                <p>
+                    I'm a Computer Science student at UC Irvine with an interest
+                    in software development, artificial intelligence, and product
+                    management.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects">
+            <h2>Projects</h2>
+            <hr>
+
+            <!-- MerryQuery -->
+            <article class="project">
+
+                <div class="project-info">
+                    <h3>MerryQuery</h3>
+
+                    <p>
+                        An AI-powered educational assistant developed by researchers at
+                        North Carolina State University. I developed an AI-powered feedback
+                        generator, modernized the course-materials upload page/process, and
+                        implemented a teaching guidance feature similar to "Ask ChatGPT".
+                    </p>
+
+                    <p><strong>Skills:</strong> React, Python, Flask, Docker</p>
+                </div>
+
+                <a href="https://exploremq.benyamintabarsi.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="assets/merryquery.jpeg"
+                         alt="Screenshot of the MerryQuery application"
+                         width="300">
+                </a>
+
+            </article>
+
+            <hr>
+
+            <!-- Anteater Adventure Club Website -->
+            <article class="project">
+
+                <div class="project-info">
+                    <h3>Anteater Adventure Club Website</h3>
+
+                    <p>
+                        Designed and developed a responsive website for UC Irvine's Anteater
+                        Adventure Club to showcase upcoming events and connect students with
+                        outdoor adventures. Built an intuitive, fun interface to improve
+                        navigation and user experience.
+                    </p>
+
+                    <p><strong>Skills:</strong> Next.js, React, TypeScript</p>
+                </div>
+
+                <a href="https://anteateradventureclub.com/"
+                   target="_blank" rel="noopener noreferrer">
+                    <img src="assets/aac.png"
+                         alt="Screenshot of the Anteater Adventure Club website"
+                         width="300">
+                </a>
+
+            </article>
+
+            <hr>
+
+            <!-- Trip Planning Web Application -->
+            <article class="project">
+
+                <div class="project-info">
+                    <h3>Trip Planning Web Application</h3>
+
+                    <p>
+                        Co-developed a travel recommendation platform that optimized cost,
+                        route efficiency, and user preferences. I built the Trip search UX
+                        and prototyped recommendation data with mock data before integrating
+                        Google Maps, Skyscanner, and GasBuddy APIs.
+                    </p>
+
+                    <p><strong>Skills:</strong> Dart, Python, HTML</p>
+                </div>
+
+            </article>
+
+            <hr>
+        </section>
+
+
+        <!-- WORK EXPERIENCE -->
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <hr>
+
+            <!-- MerryQuery Developer -->
+            <article class="experience">
+
+                <div class="experience-heading">
+                    <h3>Software Developer / Technical Consultant Intern</h3>
+                    <span class="employer">NC State University - MerryQuery</span>
+                </div>
+
+                <p class="experience-details">
+                    June 2026 - August 2026 | Raleigh, NC
+                </p>
+
+                <ul>
+                    <li>Developed an AI-assisted feedback tool using React, Python, and the OpenAI API, including Flask API endpoints, allowing instructors to upload student submissions and rubrics and generate editable, rubric-aligned feedback</li>
+                    <li>Modernized MerryQuery's course-material RAG pipeline by adding Google Drive imports, automated conversion for unsupported file types, and file management tools for uploaded course materials</li>
+                    <li>Built contextual Teaching Guidance interactions allowing instructors to highlight MerryQuery-generated text and receive RAG-grounded explanations, common misconceptions, and guiding questions to support student learning</li>
+                    <li>Added 17+ automated tests across backend integration and frontend Vitest suites covering feedback generation, document conversion, metadata updates, and teaching guidance behavior</li>
+                    <li>Collaborated with 2 educators within a 12-teacher cohort to translate user feedback into iterative product improvements; presented the work through a research poster at the internship symposium</li>
+                </ul>
+
+                <p><strong>Skills:</strong> React, Python, Flask, Docker</p>
+
+            </article>
+
+            <hr>
+
+            <!-- UCI Database Assistant -->
+            <article class="experience">
+
+                <div class="experience-heading">
+                    <h3>Database Assistant</h3>
+                    <span class="employer">UCI Digital Transformation &amp; Innovation Department</span>
+                </div>
+
+                <p class="experience-details">
+                    April 2025 - Present | Irvine, CA
+                </p>
+
+                <ul>
+                    <li>Resolve 30+ weekly Salesforce (ZotForce) data cases spanning biographical, financial, and relational records while maintaining data integrity</li>
+                    <li>Analyze datasets containing 600–1000+ attributes to generate reports supporting fundraising and alumni decisions</li>
+                    <li>Identify recurring data inconsistencies and improve CRM validation processes to increase the reliability of fundraising and alumni engagement data</li>
+                </ul>
+
+                <p><strong>Skills:</strong> Salesforce (CRM), Data Analysis, Data Quality, Reporting</p>
+
+            </article>
+
+            <hr>
+
+            <!-- Colt Buddies -->
+            <article class="experience">
+
+                <div class="experience-heading">
+                    <h3>Colt Buddies Coding Program - Founder and Teacher</h3>
+                    <span class="employer">New Haven Unified School District</span>
+                </div>
+
+                <p class="experience-details">
+                    November 2021 - May 2023 | Union City, CA
+                </p>
+
+                <ul>
+                    <li>Founded and taught an online coding program for 15+ elementary school students through weekly live Zoom sessions</li>
+                    <li>Designed structured curriculum introducing programming fundamentals and problem-solving skills to beginner students</li>
+                </ul>
+
+                <p><strong>Skills:</strong> Teaching, Programming Fundamentals, Leadership</p>
+
+            </article>
+
+            <hr>
+        </section>
+
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <h2>Education</h2>
+            <hr>
+
+            <!-- UCI B.S. Computer Science -->
+            <article class="education">
+
+                <div class="education-info">
+                    <h3>B.S. Computer Science</h3>
+                    <span class="institution">University of California, Irvine</span>
+                </div>
+
+                <p class="education-details">
+                    Specialization in Intelligent Systems; Minor in Management
+                </p>
+
+            </article>
+
+            <hr>
+
+            <!-- Study Abroad -->
+            <article class="education">
+
+                <div class="education-info">
+                    <h3>Study Abroad, Paris, France</h3>
+                    <span class="institution">University of California Education Abroad Program (UCEAP)</span>
+                </div>
+
+                <p class="education-details">
+                    Coursework in Luxury Brand Management, French Language,
+                    Art History, and Parisian History
+                </p> 
+
+            </article>
+
+            <hr>
+
+            <!-- High School -->
+            <article class="education">
+
+                <div class="education-info">
+                    <h3>High School Diploma</h3>
+                    <span class="institution">James Logan High School</span>
+                </div>
+
+                <p class="education-details">
+                    Union City, CA | Graduated 2023
+                </p>
+
+            </article>
+
+            <hr>
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <hr>
+
+            <div class="skills-container">
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category">
+                    <h3>Frameworks &amp; Libraries</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Flask</li>
+                        <li>Flutter</li>
+                        <li>LangChain</li>
+                    </ul>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3>Tools &amp; Platforms</h3>
+                    <ul>
+                        <li>Git/GitHub</li>
+                        <li>Docker</li>
+                        <li>PostgreSQL</li>
+                        <li>Salesforce</li>
+                        <li>OpenAI API</li>
+                    </ul>
+                </div>
+
+                <!-- Spoken Languages -->
+                <div class="skill-category">
+                    <h3>Spoken Languages</h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Urdu</li>
+                        <li>Punjabi</li>
+                        <li>French</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Lokesh Sharma 2026 - IN4MATX 133</p>
+    </footer>
+
 </body>
 </html>
