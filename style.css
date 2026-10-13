@@ -1,3 +1,32 @@
+:root {
+    --accent-color: #B84732;
+    --divider-color: #CEC6B0
+}
+
+/* Custom Fonts */
+@font-face {
+    font-family: "Fraunces";
+    src: url("assets/fonts/Fraunces.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("assets/fonts/Fraunces-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DM Mono";
+    src: url("assets/fonts/DM_Mono/DMMono-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* General */
 
@@ -13,6 +42,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #F4EFE4
 }
 
 main {
@@ -25,26 +55,39 @@ main {
 header {
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #F4EFE4;
     padding: 20px;
     z-index: 100;
+    border-bottom: 1px solid #CEC6B0;
 }
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /*right align*/
     gap: 40px;
     flex-wrap: wrap;
 }
 
 nav a {
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    font-weight: 400;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    color: #6B6258;
+    transition: color 0.2s ease;
+    letter-spacing: 0.8px;
 }
 
 nav a:hover {
-    color: #555;
+    color: var(--accent-color);
+}
+
+nav a:active {
+    color: var(--accent-color);
+}
+
+nav a.active {
+    color: var(--accent-color);
 }
 
 /* General */
@@ -55,16 +98,20 @@ section {
 }
 
 section h2 {
-    font-size: 30px;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 20px;
 }
 
 hr {
     border: none;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--divider-color);
     margin: 20px 0;
 }
 
-/* Introduction */
+/* INTRODUCTION */
 
 #intro {
     padding: 60px 20px;
@@ -73,39 +120,63 @@ hr {
 .intro-top {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     gap: 30px;
 }
 
 .intro-name h1 {
-    font-size: 48px;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 80px;
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1;
     margin: 0;
 }
 
 .intro-name p {
-    font-size: 20px;
-    margin-top: 10px;
+    font-family: "Fraunces", Georgia, serif;
+    color: #6B6258;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 15px 0 0;
 }
 
 .intro-contact {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 10px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    color: #6B6258;
 }
 
 .intro-contact a {
-    color: black;
+    color: inherit;
     text-decoration: none;
 }
 
 .intro-contact a:hover {
-    text-decoration: underline;
+    color: var(--accent-color);
+}
+
+#intro hr {
+    margin: 40px 0 25px;
 }
 
 .intro-about {
-    margin-top: 40px;
-    max-width: 700px;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 25px;
+    font-weight: 160;
+    font-style: normal;
     line-height: 1.6;
+    max-width: 700px;
+}
+
+.intro-about p {
+    margin: 0;
 }
 
 /* Projects */
@@ -118,14 +189,24 @@ hr {
     padding: 30px 0;
 }
 
-.project-info {
-    flex: 1;
-    min-width: 0;
+.project-info h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
 }
 
 .project-info h3 {
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 0;
+}
+
+.project-info p {
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8;
 }
 
 .project a {
@@ -139,7 +220,8 @@ hr {
     height: auto;
 }
 
-/* Work Experience */
+
+/* WORK EXPERIENCE */
 
 .experience {
     padding: 20px 0;
@@ -153,18 +235,26 @@ hr {
 }
 
 .experience-heading h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
     margin: 0;
-    font-size: 24px;
 }
 
 .experience-heading .employer {
-    font-size: 17px;
-    font-weight: bold;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 15px;
+    font-weight: 250;
+    font-style: italic;
+    color: var(--accent-color);
 }
 
 .experience-details {
-    font-size: 14px;
-    color: #666;
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    font-weight: 400;
+    color: #6B6258;
     margin-top: 8px;
 }
 
@@ -173,10 +263,21 @@ hr {
 }
 
 .experience li {
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8;
     margin-bottom: 8px;
 }
 
-/* Education */
+.experience > p:last-child {
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+
+/* EDUCATION */
 
 .education {
     padding: 20px 0;
@@ -190,21 +291,31 @@ hr {
 }
 
 .education-info h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: normal;
     margin: 0;
-    font-size: 24px;
 }
 
 .education-info .institution {
-    font-size: 17px;
-    font-weight: bold;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--accent-color);
 }
 
 .education-details {
-    font-size: 14px;
-    color: #666;
+    font-family: "DM Mono", monospace;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #6B6258;
     margin-top: 8px;
     margin-bottom: 15px;
 }
+
 
 /* Skills */
 
@@ -216,7 +327,11 @@ hr {
 }
 
 .skill-category h3 {
-    font-size: 18px;
+    font-family: "DM Mono", monospace;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    color: #6B6258;
     margin-top: 0;
 }
 
