@@ -11,44 +11,53 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
 
-
+- Images of my projects with descriptive alts for accessibility
+- Different heading levels (h1,h2,h3) and paragraphs for organize text and information between my 4 sections
+- External links to LinkedIn, GitHub, live project website
 
 (b) CSS features
 
-
+- Custom padding, margins, and spacing for readble layout
+- Color palette using CSS vars cor accent and dividers (used Coolors.co for pallete gen and Figma)
+- 3 Custom fonts (Fraunces, DM Mono, Instrument Sans) used Google fonts
+- Styled navigation bar and project images with hover effects
 
 (c) Advanced features
 
-
-
+- Sticky navigation bar with anchor links to differnt sections of the portfolio
+- Flexbox for structured layouts for the intro, project descriptions, and work experience headings
+- CSS grid for skills sectionion into 4 columns
+- Responsive layout using CSS media queries for desktop and mobile adaptiveness
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
+No warnings or errors were ignored. I entered my HTML and CSS code iteratively through the validity checkers during development to ensure that I meet all criteria.
 
 
 4. How long, in hours, did it take you to complete this assignment?
 
-
+I have experience with web development so this assignment did not take me very long. Around 4-5 hours not including some time on Figma where I initially designed the portfolio
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
-
+Primarily Figma for design insiporation and pallete generation, not for any code.
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-
+N/A
 
 7. Is there anything special we need to know in order to run your code?
 
+N/A

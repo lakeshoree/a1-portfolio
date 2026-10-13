@@ -28,6 +28,15 @@
     font-display: swap;
 }
 
+/* Instrument Sans - Variable Font */
+@font-face {
+    font-family: "Instrument Sans";
+    src: url("assets/fonts/Instrument_Sans/InstrumentSans-VariableFont_wdth\,wght.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* General */
 
 * {
@@ -63,9 +72,10 @@ header {
 
 nav {
     display: flex;
-    justify-content: flex-end; /*right align*/
+    justify-content: flex-end;
     gap: 40px;
     flex-wrap: wrap;
+    padding-right: 60px;
 }
 
 nav a {
@@ -93,7 +103,7 @@ nav a.active {
 /* General */
 
 section {
-    padding: 40px 20px;
+    padding: 5px 20px;
     scroll-margin-top: 90px;
 }
 
@@ -114,7 +124,7 @@ hr {
 /* INTRODUCTION */
 
 #intro {
-    padding: 60px 20px;
+    padding: 60px 20px 15px;
 }
 
 .intro-top {
@@ -163,7 +173,7 @@ hr {
 }
 
 #intro hr {
-    margin: 40px 0 25px;
+    margin: 40px 0 0;
 }
 
 .intro-about {
@@ -173,6 +183,7 @@ hr {
     font-style: normal;
     line-height: 1.6;
     max-width: 700px;
+    padding: 25px 5px;
 }
 
 .intro-about p {
@@ -194,19 +205,15 @@ hr {
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
-    margin-top: 0;
-}
-
-.project-info h3 {
-    font-size: 30px;
-    margin-top: 0;
+    line-height: 1.3;
+    margin: 0;
 }
 
 .project-info p {
-    font-family: "DM Mono", monospace;
-    font-size: 13px;
+    font-family: "Instrument Sans", Arial, sans-serif;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 .project a {
@@ -239,13 +246,14 @@ hr {
     font-size: 30px;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.3;
     margin: 0;
 }
 
 .experience-heading .employer {
     font-family: "Fraunces", Georgia, serif;
-    font-size: 15px;
-    font-weight: 250;
+    font-size: 18px;
+    font-weight: 400;
     font-style: italic;
     color: var(--accent-color);
 }
@@ -263,10 +271,10 @@ hr {
 }
 
 .experience li {
-    font-family: "DM Mono", monospace;
-    font-size: 13px;
+    font-family: "Instrument Sans", Arial, sans-serif;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.7;
     margin-bottom: 8px;
 }
 
@@ -292,25 +300,26 @@ hr {
 
 .education-info h3 {
     font-family: "Fraunces", Georgia, serif;
-    font-size: 28px;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 400;
     font-style: normal;
+    line-height: 1.3;
     margin: 0;
 }
 
 .education-info .institution {
     font-family: "Fraunces", Georgia, serif;
-    font-size: 20px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 400;
     font-style: italic;
     color: var(--accent-color);
 }
 
 .education-details {
-    font-family: "DM Mono", monospace;
-    font-size: 13px;
+    font-family: "Instrument Sans", Arial, sans-serif;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: 1.7;
     color: #6B6258;
     margin-top: 8px;
     margin-bottom: 15px;
@@ -341,8 +350,11 @@ hr {
 }
 
 .skill-category li {
-    margin-bottom: 10px;
+    font-family: "Instrument Sans", Arial, sans-serif;
     font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -371,6 +383,53 @@ footer {
     .project img {
         width: 220px;
     }
+}
+
+/* Images */
+.project a {
+    flex-shrink: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project img {
+    display: block;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Arrow Icon */
+.project a::after {
+    content: "↗";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    font-family: "DM Mono", monospace;
+    font-size: 20px;
+    color: #B84732;
+    background-color: #F4EFE4;
+
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background-color 0.2s ease;
+}
+
+.project a:hover::after {
+    background-color: #E9DDCB;
+}
+
+.project a:hover img {
+    transform: scale(1.03);
+    opacity: 0.85;
 }
 
 /* Mobile devices */
